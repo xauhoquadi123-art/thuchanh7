@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        gap: 15px;
+        align-items: flex-end;}
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;}
+    input[type="number"] {
+        width: 180px;
+        height: 28px;
+        box-sizing: border-box;
+    }
+    select {
+        width: 80px;
+        height: 28px;
+        box-sizing: border-box;
+    }
+    button {
+        height: 28px;
+        padding: 0 15px;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: 15px;
+    }
+</style>
+<body>
+<div class="container">
+    <div class="input-group">
+<label for="amount"> Amount</label>
+<input type="number" id="amount" value="1" >
+</div>
+<div class="input-group">
+    <label for="fromCurrency">From Currency </label>
+<select id="fromCurrency">
+    <option value="VND">VND</option>
+    <option value="USD">USD</option>
+</select>
+</div>
+<div class="input-group">
+    <label for="toCurrency">To Currency </label>
+    <select id="toCurrency">
+    <option value="USD">USD</option>
+    <option value="VND">VND</option>
+        </select>
+</div>
+<button onclick="convertCurrency()">Convert</button>
+</div>
+<p id="result"></p>
+<script src="baitap2.js"></script>
+</body>
+</html>
