@@ -8,5 +8,4 @@ return}
 let ketqua = 0
 if (pheptinh === "cong"){ ketqua = thunhat + thuhai;}
 else if ( pheptinh === "tru"){ ketqua = thunhat - thuhai;}
-document.getElementById('ketqua').innerText = ketqua;
-document.getElementById('ketqua').style.color = "red";}
+document.getElementById('ketqua').innerText = ketqua;}
